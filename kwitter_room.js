@@ -36,9 +36,9 @@ function getData() {firebase.database().ref("/").on('value', function(snapshot) 
       });});}
 getData();
 
-function redirectToRoomName(message_id){
-      console.log(message_id);
-      localStorage.setItem("room_name", message_id);
+function redirectToRoomName(rname){
+      console.log(rname);
+      localStorage.setItem("room_name", rname);
       window.location = "kwitter_page.html";
 }
 
